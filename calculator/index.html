@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="display" Id="output"readonly placeholder="0">
+            <div class="one">
+            <button class="number" onclick="give('1')">1</button>
+            <button class="number" onclick="give('2')">2</button>
+            <button class="number" onclick="give('3')">3</button>
+             <button class="operator" onclick="give('+')">+</button>
+             </div>
+            <div class="one">
+            <button class="number" onclick="give('4')">4</button>
+            <button class="number" onclick="give('5')">5</button>
+            <button class="number" onclick="give('6')">6</button>
+            <button class="operator" onclick="give('-')">-</button>
+            </div>
+            <div class="one">
+            <button class="number" onclick="give('7')">7</button>
+            <button class="number" onclick="give('8')">8</button>
+            <button class="number" onclick="give('9')">9</button>
+            <button class="operator" onclick="give('*')">x</button>
+            </div>
+            <div class="one">
+            <button class="number" onclick="give('0')">0</button>
+             <button class="number" onclick="give('.')">.</button>
+            <button class="number" onclick="erase()">C</button>
+            <button class="operator" onclick="give('/')">/</button>
+
+            </div>
+            <div class="one">
+             <button class="number" onclick="delet()">De</button>
+            <button class="number" onclick="extra()">more</button>
+            <button class="number" id="evaluate" onclick="assign()">=</button>
+            </div>
+        </div>
+    <script src="interacting.js"></script>
+    </div>
+    
+</body>
+</html>
